@@ -1,7 +1,7 @@
 library(shiny)
 library(DT)
 library(data.table)
-VUS<-readRDS("/data/Clinvar_VUS_RF_Predictions.rds")
+VUS<-readRDS("data/Clinvar_VUS_RF_Predictions.rds")
 ui <- basicPage(
   h2("CVD-PP VUS Table"),
   DT::dataTableOutput("mytable")
